@@ -21,9 +21,7 @@ header {
     display: inline-block;
     color: #D1D7E0;
     background-color: #564F6F;
-    margin-left: -100%;
 
-    
 }
 
 #line-block {
@@ -32,45 +30,30 @@ header {
     margin-left: 10px;
 }
 
-#line-container {
-    display: flex;
+#first-page {
     align-items: center;
-    margin-left: 10px;
+    background-color: #D1D7E0;
+    border: 20px solid #4c495d;
+    margin-top: 20px;
+    height: 270px;
+    width: 480px;
 }
 
-#line-container::before,
-#line-container::after {
-    content: '';
-    display: inline-block;
-    height: 30px;
-    width: 10px;
-    background-color: #564F6F;
-    margin-right: 5px;
-}
-
-#line-container::after {
-    margin-right: 0;
-}
-
-#line-container {
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
-    gap: 0px;
-}
 
 nav ul {
     list-style-type: none;
     display: flex;
-    gap: 20px;
+    gap: 10px;
+    margin-top: -10px;
+    margin-left: -70%;
 }
 
 nav a {
     color: #D1D7E0;
-    text-decoration: none;
-    font-size: 18px;
+    text-decoration: underline;
+    font-size: 15px;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: #c31cff;
 }
