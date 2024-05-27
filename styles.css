@@ -32,18 +32,24 @@ header {
 }
 
 #title {
-    margin-top: 20px;
+    margin-top: 200px;
+    margin-right: 300px;
+    margin-bottom: 0px;
+    position: absolute;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 40px;
+    font-size: 30px;
     color: #D1D7E0;
-    /* background-color: #564F6F;
-    padding: 10px; */
+    font-weight: 900;
+    background-color: #564F6F;
+    padding: 10px;
+    padding-bottom: 160px;
 }
 
 #name-block{
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
+    font-weight: 900;
     padding: 10px 20px;
     display: inline-block;
     color: #D1D7E0;

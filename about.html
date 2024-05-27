@@ -9,6 +9,7 @@
 <body>
     <div id="background-layer"></div>
     <div id="background-layer-2"></div>
+    <!-- <img src="images/cloud.png" alt="pic" id="cloudpic"> -->
 
     <header>
         <div id="name-block">CamdonCon</div>
@@ -48,34 +49,147 @@
     </nav>
 
     <main>
-        <div id="title">- - - - - About Me - - - - -</div>
+        
         
     </main>
-    <div id="page"></div>
+
+    <img id="comptia" src="images/CompTIA_Security_2Bce.png" alt="comptia" class="gallery-image">
+    <img id="aws" src="images/aws.png" alt="comptia" class="gallery-image">
+    <img id="google" src="images/google.png" alt="comptia" class="gallery-image">
+
+
+    <footer>
+        
+    </footer>
+
+    <p id="title">About Me</p>
+    <p id="about-me"> 010010101 010101 010101010 01 010 010101 0101 0101 010101010 010101 010101 01 010101 010 010101 010 01 010101010 01 01 010101 010 010101 0101 010101 010101 0101 010101 010101 01 010101 010101 01 010101 0101 010101010 01 010 010101010 01 010101010 01 010101 0101 0101 010101 010101 010101 01 0101 010101 01 01 010 010101010 010101 0101 010 01 010 010101010</p>
+    <p id="certs">Certifications</p>
+    <a id="comptia-link" href="https://www.credly.com/badges/8a0fdf6b-aa02-4f5e-bdb7-0e2738da5253" target="_blank" class="badge-link">CompTIA Security+</a>
+    <a id="aws-link" href="https://www.credly.com/badges/578c1b77-cd13-43e4-9889-f451e8f32f8b" target="_blank" class="badge-link">AWS Cloud Practitioner</a>
+    <a id="google-link" href="https://www.credly.com/badges/41688a58-8e82-43ce-b37d-d0b13590fe75" target="_blank" class="badge-link">Google Cybersecurity Certificate</a>
+
+
     <script src="script.js"></script>
 
 </body>
 <style>
     body {
-        height: 1000px;
-    }
-
-    #page {
-        margin-top: 20px;
-        height: 200px;
-        width: 480px;
+        height: 1300px;
     }
 
     #background-layer {
-        height: 1000px;
+        height: 1300px;
         width: 1000px;
         z-index: -1;
     }
 
     #background-layer-2 {
-        height: 1200px;
+        height: 1500px;
         width: 1000px;
         z-index: -2;
+    }
+
+    #about-me{
+        color: #D1D7E0;
+        margin-top: 250px;
+        width: 550px;
+        z-index: +1;
+        background-color: #221e2f;
+        padding: 20px;
+        border: 10px #D1D7E0;
+        position: absolute;
+    }
+
+    #certs{
+        margin-top: 600px;
+        margin-right: 700px;
+        margin-bottom: 0px;
+        width: 20px;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        position: absolute;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        color: #D1D7E0;
+        font-weight: 900;
+        background-color: #564F6F;
+        padding: 10px;
+        padding-left: 20px;
+    }
+
+    #comptia {
+        width: 100px;
+        height: 100px;
+        margin-top: 540px;
+        margin-left: 300px;
+        padding: 10px;
+        background-color: #564F6F;
+        z-index: +1;
+    }
+
+    #comptia-link {
+        margin-top: 655px;
+        margin-left: 140px;
+        position: absolute;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #D1D7E0;
+        font-weight: 900;
+        background-color: #221e2f;
+        padding: 40px;
+        padding-right: 240px;
+    }
+
+    #aws {
+        width: 100px;
+        height: 100px;
+        margin-top: 30px;
+        margin-right: 300px;
+        padding: 5px;
+        background-color: white;
+        border: 10px solid #564F6F;
+        z-index: +1;
+    }
+
+    #aws-link {
+        margin-top: 810px;
+        position: absolute;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #D1D7E0;
+        font-weight: 900;
+        background-color: #221e2f;
+        padding: 40px;
+        padding-left: 240px;
+    }
+
+    #google {
+        width: 100px;
+        height: 100px;
+        margin-top: 40px;
+        margin-left: 440px;
+        padding: 5px;
+        background-color: white;
+        border: 10px solid #564F6F;
+        z-index: +1;
+    }
+
+    #google-link {
+        margin-top: 980px;
+        margin-left: 140px;
+        position: absolute;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 20px;
+        color: #D1D7E0;
+        font-weight: 900;
+        background-color: #221e2f;
+        padding: 40px;
+        padding-right: 240px;
+    }
+
+    nav a:hover, aws-link:hover {
+        color: #c31cff;
     }
 
 </style>
