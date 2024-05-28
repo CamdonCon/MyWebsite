@@ -9,6 +9,7 @@
 <body>
     <div id="background-layer"></div>
     <div id="background-layer-2"></div>
+    <div id="background-layer-3"></div>
     <!-- <img src="images/cloud.png" alt="pic" id="cloudpic"> -->
 
     <header>
@@ -60,14 +61,11 @@
     <p id="title">About Me</p>
     <p id="about-me"> 010010101 010101 010101010 01 010 010101 0101 0101 010101010 010101 010101 01 010101 010 010101 010 01 010101010 01 01 010101 010 010101 0101 010101 010101 0101 010101 010101 01 010101 010101 01 010101 0101 010101010 01 010 010101010 01 010101010 01 010101 0101 0101 010101 010101 010101 01 0101 010101 01 01 010 010101010 010101 0101 010 01 010 010101010</p>
     <p id="certs">Certifications</p>
+    <div id="cert-shadow"></div>
     <a id="comptia-link" href="https://www.credly.com/badges/8a0fdf6b-aa02-4f5e-bdb7-0e2738da5253" target="_blank" class="badge-link">CompTIA Security+</a>
     <a id="aws-link" href="https://www.credly.com/badges/578c1b77-cd13-43e4-9889-f451e8f32f8b" target="_blank" class="badge-link">AWS Cloud Practitioner</a>
     <a id="google-link" href="https://www.credly.com/badges/41688a58-8e82-43ce-b37d-d0b13590fe75" target="_blank" class="badge-link">Google Cybersecurity Certificate</a>
 
-
-    <footer>
-        
-    </footer>
 
 
     <script src="script.js"></script>
@@ -90,6 +88,16 @@
         z-index: -2;
     }
 
+    #background-layer-3 {
+        height: 150px;
+        width: 400px;
+        margin-right: 380px;
+        align-items: center;
+        position: absolute;
+        background-color: #221e2f;
+        z-index: -1;
+    }
+
     #about-me{
         color: #D1D7E0;
         margin-top: 250px;
@@ -102,7 +110,7 @@
     }
 
     #certs{
-        margin-top: 600px;
+        margin-top: 550px;
         margin-right: 700px;
         margin-bottom: 0px;
         width: 20px;
@@ -118,10 +126,21 @@
         padding-left: 20px;
     }
 
+    #cert-shadow{
+        margin-top: 600px;
+        margin-right: 650px;
+        margin-bottom: 0px;
+        width: 110px;
+        height: 420px;
+        position: absolute;
+        background-color: #221e2f;
+        z-index: -1;
+    }
+
     #comptia {
         width: 100px;
         height: 100px;
-        margin-top: 540px;
+        margin-top: 490px;
         margin-left: 300px;
         padding: 10px;
         background-color: #564F6F;
@@ -129,7 +148,7 @@
     }
 
     #comptia-link {
-        margin-top: 655px;
+        margin-top: 605px;
         margin-left: 140px;
         position: absolute;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -153,7 +172,7 @@
     }
 
     #aws-link {
-        margin-top: 810px;
+        margin-top: 760px;
         position: absolute;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 20px;
@@ -161,7 +180,7 @@
         font-weight: 900;
         background-color: #221e2f;
         padding: 40px;
-        padding-left: 240px;
+        padding-left: 230px;
     }
 
     #google {
@@ -176,7 +195,7 @@
     }
 
     #google-link {
-        margin-top: 980px;
+        margin-top: 930px;
         margin-left: 140px;
         position: absolute;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -185,7 +204,7 @@
         font-weight: 900;
         background-color: #221e2f;
         padding: 40px;
-        padding-right: 240px;
+        padding-right: 230px;
     }
 
     #comptia-link:hover {
@@ -199,6 +218,7 @@
     #google-link:hover {
         color: #c31cff;
     }
+
 
 </style>
 </html>

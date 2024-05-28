@@ -21,9 +21,10 @@ body{
 #background-layer-2 {
     position: absolute;
     align-items: center;
-    background-color: #564F6F;
+    background-color: #1a1723;
     z-index: -2;
 }
+
 
 header {
     display: flex;
