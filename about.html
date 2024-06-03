@@ -13,7 +13,7 @@
     <!-- <img src="images/cloud.png" alt="pic" id="cloudpic"> -->
 
     <header>
-        <div id="name-block">CamdonCon</div>
+        <div id="name-block">CamdonCon<span class="flashing-underscore">_</span></div>
         <div id="line-block"></div>
         <div id="line-block"></div>
         <div id="line-block"></div>
@@ -45,7 +45,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a target="_blank" href="images/CamdonConard.png">Resumé</a></li>
+            <li><a target="_blank" href="images/CamdonConard.png">Resume</a></li>
         </ul>
     </nav>
 
@@ -54,24 +54,34 @@
         
     </main>
 
-    <img id="comptia" src="images/CompTIA_Security_2Bce.png" alt="comptia" class="gallery-image">
+    <img id="comptia" src="images/comptiaRB.png" alt="comptia" class="gallery-image">
     <img id="aws" src="images/aws.png" alt="comptia" class="gallery-image">
     <img id="google" src="images/google.png" alt="comptia" class="gallery-image">
 
     <p id="title">About Me</p>
-    <p id="about-me"> 010010101 010101 010101010 01 010 010101 0101 0101 010101010 010101 010101 01 010101 010 010101 010 01 010101010 01 01 010101 010 010101 0101 010101 010101 0101 010101 010101 01 010101 010101 01 010101 0101 010101010 01 010 010101010 01 010101010 01 010101 0101 0101 010101 010101 010101 01 0101 010101 01 01 010 010101010 010101 0101 010 01 010 010101010</p>
+    <p id="about-me"> 01001101 01111001 00100000 01101110 01100001 01101101 01100101 00100000 01101001 01110011 00100000 01000011 01100001 01101101 01100100 01101111 01101110 00101100 00100000 01001001 00100000 01101100 01101001 01101011 01100101 00100000 01110100 01101111 00100000 01100011 01101111 01100100 01100101 00100000 00111010 00101001</p>
     <p id="certs">Certifications</p>
     <div id="cert-shadow"></div>
-    <a id="comptia-link" href="https://www.credly.com/badges/8a0fdf6b-aa02-4f5e-bdb7-0e2738da5253" target="_blank" class="badge-link">CompTIA Security+</a>
-    <a id="aws-link" href="https://www.credly.com/badges/578c1b77-cd13-43e4-9889-f451e8f32f8b" target="_blank" class="badge-link">AWS Cloud Practitioner</a>
-    <a id="google-link" href="https://www.credly.com/badges/41688a58-8e82-43ce-b37d-d0b13590fe75" target="_blank" class="badge-link">Google Cybersecurity Certificate</a>
 
-
+    <a id="comptia-link" href="https://www.credly.com/badges/8a0fdf6b-aa02-4f5e-bdb7-0e2738da5253" target="_blank" class="badge-link">CompTIA_Security+</a>
+    <a id="aws-link" href="https://www.credly.com/badges/578c1b77-cd13-43e4-9889-f451e8f32f8b" target="_blank" class="badge-link">AWS_Cloud_Practitioner</a>
+    <a id="google-link" href="https://www.credly.com/badges/41688a58-8e82-43ce-b37d-d0b13590fe75" target="_blank" class="badge-link">Google_Cybersecurity_Certificate</a>
+    
+    <p id="comptia-date">Unlocked Nov-16-2023</p>
+    <p id="aws-date">Unlocked Aug-18-2023</p>
+    <p id="google-date">Unlocked Sept-28-2023</p>
 
     <script src="script.js"></script>
 
 </body>
 <style>
+    @font-face {
+        font-family: 'myFont';
+        src: url('fonts/ARCADECLASSIC.TTF') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
     body {
         height: 1300px;
     }
@@ -103,21 +113,21 @@
         margin-top: 250px;
         width: 550px;
         z-index: +1;
-        background-color: #221e2f;
+        /* background-color: #221e2f; */
+        background-color: #1a1723;
+        font-family: 'myFont';
         padding: 20px;
         border: 10px #D1D7E0;
         position: absolute;
+        border: 5px solid #564F6F;
     }
 
     #certs{
-        margin-top: 550px;
-        margin-right: 700px;
+        margin-top: 500px;
+        margin-right: 500px;
         margin-bottom: 0px;
-        width: 20px;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
         position: absolute;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'myFont';
         font-size: 30px;
         color: #D1D7E0;
         font-weight: 900;
@@ -127,84 +137,130 @@
     }
 
     #cert-shadow{
-        margin-top: 600px;
-        margin-right: 650px;
-        margin-bottom: 0px;
-        width: 110px;
-        height: 420px;
+        margin-top: 520px;
+        margin-right: 0px;
+        width: 700px;
+        height: 600px;
         position: absolute;
-        background-color: #221e2f;
+        /* background-color: #221e2f; */
+        background-color: #1a1723;
+        border: 5px solid #564F6F;
         z-index: -1;
     }
 
     #comptia {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin-top: 490px;
-        margin-left: 300px;
-        padding: 10px;
-        background-color: #564F6F;
+        margin-right: 730px;
+        /* background-color: #221e2f; */
+        background-color: #1a1723;
+        border: 5px solid #564F6F;
         z-index: +1;
     }
 
     #comptia-link {
-        margin-top: 605px;
-        margin-left: 140px;
+        margin-top: 580px;
+        margin-right: 130px;
         position: absolute;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'myFont';
         font-size: 20px;
         color: #D1D7E0;
         font-weight: 900;
+        text-decoration: none;
         background-color: #221e2f;
-        padding: 40px;
-        padding-right: 240px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        width: 600px;
+        padding-left: 120px;
+        border: 5px solid #564F6F;
+    }
+
+    #comptia-date{
+        margin-top: 630px;
+        margin-left: 300px;
+        font-family: 'myFont';
+        font-size: 20px;
+        color: #D1D7E0;
+        font-weight: 900;
+        position: absolute;
     }
 
     #aws {
-        width: 100px;
-        height: 100px;
-        margin-top: 30px;
-        margin-right: 250px;
+        width: 70px;
+        height: 70px;
+        margin-top: 70px;
+        margin-right: 730px;
         padding: 5px;
-        background-color: white;
-        border: 10px solid #564F6F;
+        /* background-color: #221e2f; */
+        background-color: #1a1723;
+        border: 5px solid #564F6F;
         z-index: +1;
     }
 
     #aws-link {
-        margin-top: 760px;
+        margin-top: 740px;
+        margin-right: 130px;
         position: absolute;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'myFont';
         font-size: 20px;
         color: #D1D7E0;
         font-weight: 900;
+        text-decoration: none;
         background-color: #221e2f;
-        padding: 40px;
-        padding-left: 230px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        width: 600px;
+        padding-left: 120px;
+        border: 5px solid #564F6F;
+    }
+
+    #aws-date{
+        margin-top: 790px;
+        margin-left: 300px;
+        font-family: 'myFont';
+        font-size: 20px;
+        color: #D1D7E0;
+        font-weight: 900;
+        position: absolute;
     }
 
     #google {
-        width: 100px;
-        height: 100px;
-        margin-top: 40px;
-        margin-left: 440px;
-        padding: 5px;
-        background-color: white;
-        border: 10px solid #564F6F;
+        width: 80px;
+        height: 80px;
+        margin-top: 70px;
+        margin-right: 730px;
+        /* background-color: #221e2f; */
+        background-color: #1a1723;
+        border: 5px solid #564F6F;
         z-index: +1;
     }
 
     #google-link {
-        margin-top: 930px;
-        margin-left: 140px;
+        margin-top: 900px;
+        margin-right: 130px;
         position: absolute;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'myFont';
         font-size: 20px;
         color: #D1D7E0;
         font-weight: 900;
+        text-decoration: none;
         background-color: #221e2f;
-        padding: 40px;
-        padding-right: 230px;
+        padding-top: 20px;
+        padding-bottom: 70px;
+        width: 600px;
+        padding-left: 120px;
+        border: 5px solid #564F6F;
+    }
+
+    #google-date{
+        margin-top: 950px;
+        margin-left: 300px;
+        font-family: 'myFont';
+        font-size: 20px;
+        color: #D1D7E0;
+        font-weight: 900;
+        position: absolute;
     }
 
     #comptia-link:hover {
@@ -219,6 +275,18 @@
         color: #c31cff;
     }
 
+    .flashing-underscore {
+        animation: flash .7s infinite;
+    }
+
+    @keyframes flash {
+        0%, 0% {
+            opacity: 1;
+        }
+        0%, 0% {
+            opacity: 0;
+        }
+    }
 
 </style>
 </html>

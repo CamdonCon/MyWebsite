@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'myFont';
+    src: url('fonts/ARCADECLASSIC.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body, ul {
     margin: 0;
     padding: 0;
@@ -5,7 +12,8 @@ body, ul {
 
 body{
     height: 3000px;
-    background-color: #221e2f;
+    background-color: #1a1723;
+    /* background-color: #221e2f; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,7 +22,9 @@ body{
 #background-layer {
     position: absolute;
     align-items: center;
-    background-color: #2D283E;
+    /* background-color: #2D283E; */
+    background-color: #221e2f;
+    border: 5px solid #564F6F;
     z-index: -1;
 }
 
@@ -37,10 +47,10 @@ header {
     margin-right: 300px;
     margin-bottom: 0px;
     position: absolute;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'myFont', Arial, sans-serif;
     font-size: 30px;
     color: #D1D7E0;
-    font-weight: 900;
+    font-weight: 400;
     background-color: #564F6F;
     padding: 10px;
     padding-bottom: 160px;
@@ -48,7 +58,7 @@ header {
 
 #name-block{
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'myFont', Arial, sans-serif;
     font-size: 30px;
     font-weight: 900;
     padding: 10px 20px;
@@ -82,6 +92,7 @@ nav a {
     color: #D1D7E0;
     text-decoration: underline;
     font-size: 15px;
+    font-family: 'myFont', Arial, sans-serif;
     transition: .2s ease;
 }
 
